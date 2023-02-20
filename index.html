@@ -17,10 +17,10 @@
   <body class="h-screen overflow-x-hidden">
     <!-- top -->
 
-    <div class="bg-[#404EED]">
+    <div class="bg-[#404EED] pb-[130px] sm:pb-0">
       <!-- navbar -->
 
-      <nav class="flex justify-around p-6">
+      <nav class="flex justify-between sm:justify-around p-2 sm:p-6">
         <div class="logo text-white flex items-center cursor-pointer">
           <img src="./assets/logo.png" alt="Logo" class="w-8" />
           <p class="font-boldest ml-2 text-xl">Discord</p>
@@ -29,7 +29,7 @@
         <!-- menu  -->
 
         <div class="">
-          <ul class="text-white flex">
+          <ul class="text-white hidden sm:flex ">
             <li class="mx-3 font-semibold hover:underline">
               <a href="" class="">Download</a>
             </li>
@@ -61,20 +61,30 @@
             Open Discord
           </button>
         </div>
+
+        <!-- menu -->
+
+        <div class="inline sm:hidden">
+          <img src="./assets/menu.svg" alt="" id="menu" class="w-10">
+        </div>
+
+        <!-- small screen menu bar -->
+
+
       </nav>
 
       <!-- top main -->
 
       <div class="w-full">
-        <div class="">
-          <div class="text-white mx-auto mt-24">
+        <div class="flex flex-col">
+          <div class="text-white mx-auto mt-12 sm:mt-24">
             <p
-              class="text-7xl my-6 text-center"
+              class="text-3xl sm:text-7xl my-6 text-center"
               style="font-family: 'Righteous', cursive">
               IMAGINE A PLACE...
             </p>
             <p
-              class="text-center text-lg leading-8 mt-6 mb-[-100px] w-[600px] mx-auto">
+              class="text-center text-sm sm:text-lg leading-8 mt-6 mb-[-100px] w-[90%] sm:w-[600px] mx-auto">
               ...where you can belong to a school club, a gaming group, or a
               worldwide art community. Where just you and a handful of friends
               can spend time together. A place that makes it easy to talk every
@@ -84,22 +94,24 @@
 
           <!-- Buttons -->
 
-          <div class="flex justify-center w-full relative top-36">
+          <div class="flex flex-col sm:flex-row items-center justify-center w-[70%] sm:w-full relative mx-auto sm:mx-0 top-[120px] sm:top-36">
             <button
-              class="bg-white flex items-center px-8 py-4 rounded-full text-xl mx-2  hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
-              <img src="./assets/download-black.svg" alt="" class="w-6 mr-2" />
+              class="bg-white flex items-center px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-xl my-1 sm:my-0 mx-2  hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+              <img src="./assets/download-black.svg" alt="" class="w-4 sm:w-6 mr-1 sm:mr-2" />
               Download for Linux
             </button>
             <button
-              class="bg-gray-900 text-white flex items-center px-8 py-4 rounded-full text-xl mx-2  hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+              class="bg-gray-900 text-white flex items-center px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-xl my-1 sm:my-0 mx-2  hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
               Open Discord in Your Browser
             </button>
+            <img src="./assets/top-left.svg" alt="" class="sm:hidden">
+
           </div>
 
           <!-- Images -->
 
           <div class="">
-            <div class="relative flex w-full">
+            <div class="relative hidden sm:flex w-full">
               <div class="overflow-hidden">
                 <img
                   src="./assets/top-right.svg"
@@ -111,25 +123,26 @@
                 alt=""
                 class="w-[53vw] absolute left-[-350px] top-[-39px]" />
             </div>
-            <img src="./assets/top-bg.svg" alt="" class="z-0 w-fit" />
+            <img src="./assets/top-bg.svg" alt="" class="z-0 w-fit hidden sm:block" />
           </div>
         </div>
       </div>
+    
     </div>
 
     <!-- Body Section 1 -->
 
-    <div class="bg-[#fff] flex justify-between my-6 items-center py-16">
-      <div class="basis-1/2 p-6">
-        <img src="./assets/1.svg" alt="" class="w-full" />
+    <div class="bg-[#fff] flex flex-col sm:flex-row justify-between my-6 items-center py-16">
+      <div class="sm:basis-1/2 sm:p-6 ">
+        <img src="./assets/1.svg" alt="" class="w-full sm:block" />
       </div>
-      <div class="basis-1/2 pl-36 text-gray-900">
+      <div class="sm:basis-1/2 sm:pl-36 text-center sm:text-left text-gray-900 mx-auto sm:mx-0">
         <p
-          class="font-boldest text-5xl w-96 mb-6"
+          class="font-boldest text-2xl sm:text-5xl w-[80%] sm:w-96 mb-6 mt-4 sm:mt-0"
           style="font-family: 'Righteous', cursive">
           Create an invite-only place where you belong
         </p>
-        <p class="text-xl w-96">
+        <p class="text-lg sm:text-xl w-[90%] sm:w-96">
           Discord servers are organized into topic-based channels where you can
           collaborate, share, and just talk about your day without clogging up a
           group chat.
@@ -139,63 +152,58 @@
 
     <!-- Body Section 2 -->
 
-    <div class="bg-[#f6f6f6] flex justify-between my-6 items-center py-16">
-      <div class="basis-1/2 pl-36 text-gray-900">
+
+    <div class="bg-[#fff] flex flex-col sm:flex-row-reverse justify-between my-6 items-center py-16">
+      <div class="sm:basis-1/2 sm:p-6 ">
+        <img src="./assets/2.svg" alt="" class="w-full sm:block" />
+      </div>
+      <div class="sm:basis-1/2 sm:pl-36 text-center sm:text-left text-gray-900 mx-aut0 sm:mx-0">
         <p
-          class="font-boldest text-5xl w-96 mb-6"
+          class="font-boldest text-2xl sm:text-5xl w-[80%] sm:w-96 mb-6 mt-4 sm:mt-0 text-center"
           style="font-family: 'Righteous', cursive">
           Where hanging out is easy
         </p>
-        <p class="text-xl w-96">
-          Grab a seat in a voice channel when you’re free. Friends in your
-          server can see you’re around and instantly pop in to talk without
-          having to call.
+        <p class="text-lg sm:text-xl w-[90%] sm:w-96">
+          Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.
         </p>
-      </div>
-      <div class="basis-1/2 p-6">
-        <img src="./assets/2.svg" alt="" class="w-full" />
       </div>
     </div>
 
     <!-- Body Section 3 -->
 
-    <div class="bg-[#fff]">
-      <div class="bg-[#fff] flex justify-between my-6 items-center py-16">
-        <div class="basis-1/2 p-6">
-          <img src="./assets/3.svg" alt="" class="w-full" />
-        </div>
-        <div class="basis-1/2 pl-36 text-gray-900">
-          <p
-            class="font-boldest text-5xl w-96 mb-6"
-            style="font-family: 'Righteous', cursive">
-            From few to a fandom
-          </p>
-          <p class="text-xl w-96">
-            Get any community running with moderation tools and custom member
-            access. Give members special powers, set up private channels, and
-            more.
-          </p>
-        </div>
+    <div class="bg-[#fff] flex flex-col sm:flex-row justify-between my-6 items-center py-16">
+      <div class="sm:basis-1/2 sm:p-6 ">
+        <img src="./assets/3.svg" alt="" class="w-full sm:block" />
+      </div>
+      <div class="sm:basis-1/2 sm:pl-36 text-center sm:text-left text-gray-900 mx-auto sm:mx-0 mt-4 sm:mt-0">
+        <p
+          class="font-boldest text-2xl sm:text-5xl w-[80%] sm:w-96 mb-6"
+          style="font-family: 'Righteous', cursive">
+          From few to a fandom
+        </p>
+        <p class="text-lg sm:text-xl w-[90%] sm:w-96">
+          Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.
+        </p>
       </div>
     </div>
 
     <!-- Bottom Hero -->
 
-    <div class="bg-[#f6f6f6] py-12 text-gray-900 mb-6">
+    <div class="bg-[#f6f6f6] py-12 text-gray-900 mb-6 ">
       <h1
-        class="text-5xl text-center my-6 font-boldest"
+        class="w-[90%] text-xl sm:text-5xl text-center my-6 font-boldest"
         style="font-family: 'Righteous', cursive">
         RELIABLE TECH FOR STAYING CLOSE
       </h1>
-      <p class="w-[70%] text-center mx-auto text-xl my-6">
+      <p class="w-[90%] text-left sm:text-center mx-auto text-lg sm:text-xl my-6">
         Low-latency voice and video feels like you’re in the same room. Wave
         hello over video, watch friends stream their games, or gather up and
         have a drawing session with screen share.
       </p>
       <img src="./assets/bottom.svg" alt="" class="mx-auto w-[90%]" />
 
-      <img src="./assets/txt-star.svg" alt="" class="mx-auto" />
-      <p class="font-boldest text-center text-4xl mb-6">
+      <img src="./assets/txt-star.svg" alt="" class="mx-auto w-[70%] sm:w-fit" />
+      <p class="font-boldest text-center text-2xl w-[60%] mx-auto mt-[-10px] sm:text-4xl mb-6">
         Ready to start your journey?
       </p>
       <button
@@ -208,7 +216,68 @@
     <!-- Footer -->
 
     <footer class="py-20 px-12 bg-zinc-800">
-      <div class="flex">
+
+      <!-- Small screen footer -->
+
+      <div class="flex flex-col sm:hidden ">
+        <!-- Row 1 -->
+        <div class=" px-4">
+          <h1 class="text-[#404EED] font-boldest text-4xl" style="font-family: 'Righteous', cursive">IMAGINE A PLACE</h1>
+          <select name="Language" id="Language" class="bg-transparent text-white text-xs font-thin border-0 focus:bg-transparent focus:border-0 cursor-pointer my-2">
+            <option value="eng" class="bg-transparent text-white text-xs font-thin">English, USA</option>
+            <option value="Bangla" class="bg-transparent text-white text-xs font-thin">Bangla, India</option>
+          </select>
+            <!-- social -->
+          <div class="flex">
+            <img src="./assets/fb.png" alt="" class="w-6 mx-1">
+            <img src="./assets/instagram.png" alt="" class="w-6 mx-1">
+            <img src="./assets/twitter.png" alt="" class="w-6 mx-1">
+            <img src="./assets/youtube.png" alt="" class="w-6 mx-1">
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-between mt-6">
+          <div class="w-[40%]">
+            <div class="text-[#404EED]">Product</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Download</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Nitro</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Status</div>
+          </div>
+          <div class="w-[40%]">
+            <div class="text-[#404EED]">Company</div>
+            <div class="hover:underline cursor-pointer text-white py-1">About</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Jobs</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Branding</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Newsroom</div>
+          </div>
+          <div class="w-[40%]">
+            <div class="text-[#404EED]">Resources</div>
+            <div class="hover:underline cursor-pointer text-white py-1">College</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Support</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Safety</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Blog</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Feedback</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Developers</div>
+            <div class="hover:underline cursor-pointer text-white py-1">StreamKit</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Creators</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Community</div>
+          </div>
+          <div class="w-[40%]">
+            <div class="text-[#404EED]">Policies</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Terms</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Privacy</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Cookie Settings</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Guidelines</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Acknowledgement</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Licenses</div>
+            <div class="hover:underline cursor-pointer text-white py-1">Moderation</div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Large screen footer -->
+
+      <div class="hidden sm:flex ">
         <!-- Row 1 -->
         <div class="basis-2/6 px-[70px]">
           <h1 class="text-[#404EED] font-boldest text-4xl" style="font-family: 'Righteous', cursive">IMAGINE A PLACE</h1>
